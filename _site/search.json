@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This site is put together for researchers who make use of SCB data.\nWe often have similar questions, and solve these problems and save the code used on our computers.\nThis site is a place to share this knowledge and get answers to specific questions.\nWe want to foster a similar environment to Statalist, but with a better culture!\nThe site is not endorsed by Statistics Sweden."
+  },
+  {
+    "objectID": "guides.html",
+    "href": "guides.html",
+    "title": "Guides",
+    "section": "",
+    "text": "The collection of guides put together by users is listed here.\n\n\n\n\n\n\n\n\n  \n\n\n\n\nSwedish Standard Classification of Occupations Crosswalk\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "guides/Swedish Standard Classification of Occupations Crosswalk.html",
+    "href": "guides/Swedish Standard Classification of Occupations Crosswalk.html",
+    "title": "Swedish Standard Classification of Occupations Crosswalk",
+    "section": "",
+    "text": "Example post\nContrary to popular belief, comparing occupational groups across time is not a lost cause – even when the classification standards change. In this guide, we will dive into the intricacies of the Swedish Standard Classification of Occupations, exploring the transition from SSYK 96 to SSYK 2012, and showing you that it is indeed possible to create a crosswalk that allows for meaningful comparisons across different years. By aligning the old and new classifications, we can gain valuable insights into the evolving landscape of the Swedish labor market and observe trends that might have otherwise gone unnoticed."
+  },
+  {
+    "objectID": "FAQs.html",
+    "href": "FAQs.html",
+    "title": "Frequently asked questions",
+    "section": "",
+    "text": "The collection of FAQs is listed here.\n\n\n\n\n\n\n\n\n  \n\n\n\n\nHow to deal with retirees in the LISA data\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "FAQs/How do we deal with defining retirees.html",
+    "href": "FAQs/How do we deal with defining retirees.html",
+    "title": "How to deal with retirees in the LISA data",
+    "section": "",
+    "text": "Example FAQ\nRetirees in the LISA data are somewhat difficult to define!"
+  }
+]

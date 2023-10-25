@@ -1,0 +1,8 @@
+---
+title: "Guides"
+listing:
+  contents:
+    - "guides/*.qmd"
+---
+
+The collection of guides put together by users is listed here.
