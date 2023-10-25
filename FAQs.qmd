@@ -1,8 +1,0 @@
----
-title: "Frequently asked questions"
-listing:
-  contents:
-    - "FAQs/*.qmd"
----
-
-The collection of FAQs is listed here.

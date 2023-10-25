@@ -1,8 +1,0 @@
----
-title: "Swedish Standard Classification of Occupations Crosswalk"
-image: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Pedestrian_and_Bike_Crossing_at_Xinyi_Plaza_20120701.jpg"
----
-
-*Example post*
-
-Contrary to popular belief, comparing occupational groups across time is not a lost cause – even when the classification standards change. In this guide, we will dive into the intricacies of the Swedish Standard Classification of Occupations, exploring the transition from SSYK 96 to SSYK 2012, and showing you that it is indeed possible to create a crosswalk that allows for meaningful comparisons across different years. By aligning the old and new classifications, we can gain valuable insights into the evolving landscape of the Swedish labor market and observe trends that might have otherwise gone unnoticed.
