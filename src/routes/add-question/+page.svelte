@@ -9,6 +9,7 @@
     let title = "";
     let body = "";
     let selectedTags = new Set();
+    let feedbackMessage = ""; // Add a variable to hold the feedback message
 
     const tags = ["Data", "Methodology", "Software", "Variables", "Other"];
 
@@ -39,9 +40,11 @@
             title = "";
             body = "";
             selectedTags = new Set();
+
+            feedbackMessage = "Question added successfully"; // Update feedback message on success
         } catch (error) {
             console.error("Error adding question:", error);
-            // Optionally display an error message to the user
+            feedbackMessage = `Error: ${error.message}`; // Update feedback message on error
         }
     }
 </script>
@@ -51,6 +54,17 @@
         <div class="col-md-8">
             <h1 class="text-center mb-4">Add Question</h1>
 
+            {#if feedbackMessage}
+                <!-- Conditionally render feedback message -->
+                <div
+                    class="alert alert-{feedbackMessage.startsWith('Error')
+                        ? 'danger'
+                        : 'success'}"
+                >
+                    {feedbackMessage}
+                </div>
+            {/if}
+
             <SignedOut let:auth>
                 <div class="alert alert-warning" role="alert">
                     <h2 class="alert-heading">Signed Out</h2>
@@ -59,7 +73,7 @@
             </SignedOut>
 
             <SignedIn let:user>
-                <form on:submit|preventDefault={addQuestion(user.uid)}>
+                <form on:submit|preventDefault={() => addQuestion(user.uid)}>
                     <div class="form-group">
                         <input
                             type="text"
