@@ -1,0 +1,71 @@
+/* Variables and mixins declared here will be available in all other SCSS files */
+
+// Global Styles for the SCB Users Group App
+
+// Fonts
+$font-heading: 'Sumana', serif;
+$font-body: 'Open Sans', sans-serif;
+
+// Colors (Add your primary colors here, for example)
+$primary-color: #3498db; // Blue color as an example
+$secondary-color: #e74c3c; // Red color as an example
+$dark-overlay: rgba(0, 0, 0, 0.5);
+
+// Base setup
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-body;
+    line-height: 1.6;
+    color: #333; // default body text color
+    background-color: #f4f4f4; // default background color
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading;
+    margin-bottom: 1.5rem;
+}
+
+// Containers
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+// Hero section
+.hero {
+    height: 100vh; 
+    background: linear-gradient($dark-overlay, $dark-overlay), url('/hero.png') center/cover no-repeat;
+}
+
+// Buttons (Example styling; adjust as needed)
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &.btn-primary {
+        background-color: $primary-color;
+        color: #fff;
+    }
+
+    &.btn-secondary {
+        background-color: $secondary-color;
+        color: #fff;
+    }
+}
+
+// Add more styles as you go along...

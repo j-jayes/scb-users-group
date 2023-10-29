@@ -1,108 +1,38 @@
+# create-svelte
 
-# StackOverflow Clone Project
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Overview
+## Creating a project
 
-This project aims to create a clone of StackOverflow using SvelteKit for the frontend and Firebase for the backend. Users will be able to ask, answer, and vote on questions, among other features.
+If you're seeing this, you've probably already done this step. Congrats!
 
-## Tech Stack
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-- Frontend: SvelteKit
-- Backend: Firebase (Firestore, Authentication, Functions)
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-## Features
+## Developing
 
-- User authentication (Sign up, Login, Logout)
-- Post questions
-- Post answers
-- Upvote and Downvote questions and answers
-- Comment on questions and answers
-- Search and Filter questions
-- Tags to categorize questions
-- User profiles
-- Admin dashboard
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-## Database Schema (Firebase Firestore)
+```bash
+npm run dev
 
-### Users Collection
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-- uid
-- username
-- email
-- profilePicURL
-- reputation
+## Building
 
-### Questions Collection
+To create a production version of your app:
 
-- questionId
-- title
-- body
-- tags
-- votes
-- createdAt
-- createdBy
+```bash
+npm run build
+```
 
-### Answers Collection
+You can preview the production build with `npm run preview`.
 
-- answerId
-- body
-- votes
-- createdAt
-- createdBy
-
-### Comments Collection
-
-- commentId
-- body
-- createdAt
-- createdBy
-
-### Tags Collection
-
-- tagId
-- tagName
-
-## Frontend (SvelteKit)
-
-- Setup SvelteKit project
-- Create pages (Home, Question, Login, Signup, Profile, Admin)
-- Implement routing
-- Create reusable components (Header, Footer, QuestionCard, AnswerCard)
-- Implement state management (use Svelte stores)
-- Connect to Firebase SDK
-- Style the application (consider using Tailwind CSS)
-
-## Backend (Firebase)
-
-- Setup Firebase project
-- Configure Firebase Authentication
-- Setup Firestore database and define security rules
-- Implement Firebase Functions for server-side logic (e.g., updating user reputation, handling votes)
-
-## Testing and Quality Assurance
-
-- Write unit and integration tests (consider using Jest or a similar testing framework)
-- Setup continuous integration and deployment (CI/CD) pipeline
-- Perform manual testing
-- Optimize performance (e.g., use Firebase indexes, optimize image loading)
-
-## Deployment
-
-- Choose a hosting platform (consider using Firebase Hosting or Vercel)
-- Deploy the frontend and backend
-- Setup custom domain (if necessary)
-- Monitor and analyze application performance and errors
-
-## Maintenance and Monitoring
-
-- Setup monitoring tools (e.g., Firebase Crashlytics, Google Analytics)
-- Keep dependencies up-to-date
-- Fix bugs and improve performance based on user feedback and monitoring data
-- Implement new features as necessary
-
-## Documentation and Training
-
-- Document the codebase
-- Create a developer guide and end-user guide
-- Train the admin/users (if necessary)
-
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
