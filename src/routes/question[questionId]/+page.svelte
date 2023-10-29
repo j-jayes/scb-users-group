@@ -33,12 +33,18 @@
     onMount(async () => {
         questionData = await fetchQuestionData(firestore, questionId);
         answers = await fetchAnswers(firestore, questionId);
+
+        const userIds = new Set();
+
+        // Add the UID of the question asker
+        userIds.add(questionData.createdBy);
+
+        // Add the UIDs of the people who answered the question
         if (answers.length > 0) {
-            const userIds = Array.from(
-                new Set(answers.map((answer) => answer.createdBy))
-            );
-            userNames = await fetchUserNames(firestore, userIds);
+            answers.forEach((answer) => userIds.add(answer.createdBy));
         }
+
+        userNames = await fetchUserNames(firestore, Array.from(userIds));
     });
 
     async function upvote(userId, itemID, isQuestion) {
@@ -74,8 +80,7 @@
                             </div>
                         </div>
                         <div class="card-footer text-muted">
-                            Created by {userNames[questionData.createdBy]} | UID:
-                            {questionData.createdBy}
+                            Created by {userNames[questionData.createdBy]}
                             <button
                                 on:click={() =>
                                     upvote(user.uid, questionId, true)}

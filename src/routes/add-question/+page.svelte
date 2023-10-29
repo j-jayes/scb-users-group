@@ -10,13 +10,7 @@
     let body = "";
     let selectedTags = new Set();
 
-    const tags = [
-        "Data",
-        "Methodology",
-        "Software",
-        "Variables",
-        "Other"
-    ];
+    const tags = ["Data", "Methodology", "Software", "Variables", "Other"];
 
     function toggleTag(tag) {
         if (selectedTags.has(tag)) {
@@ -33,7 +27,7 @@
             const questionData = {
                 title,
                 body,
-                tags: [selectedTag],
+                tags: Array.from(selectedTags),
                 votes: 0,
                 createdAt,
                 createdBy: uid,
@@ -44,7 +38,7 @@
             // Optionally reset the form fields after submission
             title = "";
             body = "";
-            selectedTag = "";
+            selectedTags = new Set();
         } catch (error) {
             console.error("Error adding question:", error);
             // Optionally display an error message to the user
