@@ -135,10 +135,7 @@
 </SignedIn>
 
 <SignedOut let:auth>
-    <div class="container alert alert-warning" role="alert">
-        <h2 class="alert-heading">Signed Out</h2>
-        <p>Log in or register to add an answer.</p>
-    </div>
+    <br />
     <div class="container">
         <div class="row justify-content-center">
             <!-- Main Content -->
@@ -196,5 +193,9 @@
                 {/if}
             </div>
         </div>
+    </div>
+    <div class="container alert alert-warning" role="alert">
+        <h2 class="alert-heading">Signed Out</h2>
+        <p>Log in or register to add an answer.</p>
     </div>
 </SignedOut>
