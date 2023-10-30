@@ -22,11 +22,3 @@ The alpha version of the site is launched at [This netlify site](https://spiffy-
 ## Getting Involved
 
 We welcome and encourage you to contribute to the SCB Users Group community. If you have any ideas for features that you'd like to see or improvements that could be made, please feel free to open a new issue in the [GitHub Discussions tab](https://github.com/j-jayes/scb-users-group/discussions/1) of this repository. Your feedback and suggestions are invaluable in helping us create a better platform for everyone.
-
-## Contribute
-
-We appreciate your interest in contributing to the SCB Users Group! Before getting started, please read our [Contribution Guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md).
-
-Once you're familiar with our guidelines, you're ready to contribute! Check out our [Issues tab](https://github.com/[username]/[repo]/issues) to find existing issues that need help or to open a new issue for your feature request or bug report.
-
-Thank you for being a part of the SCB Users Group community and helping us improve our platform!
