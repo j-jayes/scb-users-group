@@ -138,4 +138,63 @@
     <div class="container">
         <p>Log in or register to add an answer</p>
     </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Main Content -->
+            <div class="col-md-12">
+                {#if questionData}
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h1 class="card-title">{questionData.title}</h1>
+                            <p class="card-text">{questionData.body}</p>
+                            <div>
+                                {#each questionData.tags as tag}
+                                    <span class="badge badge-primary mr-2"
+                                        >{tag}</span
+                                    >
+                                {/each}
+                            </div>
+                            <div class="mt-3">
+                                <span class="mr-2">
+                                    <i class="fas fa-thumbs-up" />
+                                    {questionData.votes}
+                                </span>
+                                <span class="text-muted"
+                                    >{formatDate(questionData.createdAt)}</span
+                                >
+                            </div>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Asked by {userNames[questionData.createdBy]}
+                        </div>
+                    </div>
+
+                    <!-- Answers -->
+                    <h2>Answers</h2>
+                    {#each answers as answer}
+                        <div class="card mb-3 bg-light">
+                            <div class="card-body">
+                                <p class="card-text">{answer.body}</p>
+                                <div class="mt-3">
+                                    <span class="mr-2">
+                                        <i class="fas fa-thumbs-up" />
+                                        {answer.votes}
+                                    </span>
+                                    <span class="text-muted"
+                                        >{formatDate(answer.createdAt)}</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted">
+                                Answered by {userNames[answer.createdBy]}
+                            </div>
+                        </div>
+                    {/each}
+                {:else}
+                    <p>Loading...</p>
+                {/if}
+
+            </div>
+        </div>
+    </div>
 </SignedOut>
