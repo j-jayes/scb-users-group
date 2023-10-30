@@ -72,7 +72,7 @@
                             <div class="mt-3">
                                 <span class="mr-2">
                                     <i class="fas fa-thumbs-up" />
-                                    {questionData.votes} votes
+                                    {questionData.votes}
                                 </span>
                                 <span class="text-muted"
                                     >{formatDate(questionData.createdAt)}</span
@@ -80,7 +80,7 @@
                             </div>
                         </div>
                         <div class="card-footer text-muted">
-                            Created by {userNames[questionData.createdBy]}
+                            Asked by {userNames[questionData.createdBy]}
                             <button
                                 on:click={() =>
                                     upvote(user.uid, questionId, true)}
@@ -100,7 +100,7 @@
                                 <div class="mt-3">
                                     <span class="mr-2">
                                         <i class="fas fa-thumbs-up" />
-                                        {answer.votes} votes
+                                        {answer.votes}
                                     </span>
                                     <span class="text-muted"
                                         >{formatDate(answer.createdAt)}</span

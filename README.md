@@ -1,38 +1,32 @@
-# create-svelte
+# SCB Users Group
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Welcome to the SCB Users Group repo! This repo holds the website that serves as a community platform for users of Statistics Sweden data, providing a space where you can ask questions, share insights, and learn from each other. We aim to foster a collaborative environment to help everyone make the most out of the SCB's valuable data resources.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+The alpha version of the site is launched at [This netlify site](https://spiffy-nougat-02da4f.netlify.app).
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+### Current Features
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- **Homepage:** Displays popular questions to help users easily find common queries and their answers.
+- **Add Question Page:** Allows users to post their questions for the community to answer.
+- **User Authentication:** Secure login and registration through Google Firebase.
 
-## Developing
+### Upcoming Features (Roadmap)
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- **Rendered Markdown:** Integration of markdown rendering in questions and answers to support the use of equations and tables.
+- **Search Functionality:** Implementation of Algolia for a more powerful and efficient search function.
+- **User Profile Pictures:** Addition of profile pictures to user profiles for a more personalized touch.
+- **Styling:** Improved styling and design to make the site more visually appealing and user-friendly.
 
-```bash
-npm run dev
+## Getting Involved
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+We welcome and encourage you to contribute to the SCB Users Group community. If you have any ideas for features that you'd like to see or improvements that could be made, please feel free to open a new issue in the [GitHub Discussions tab](https://github.com/j-jayes/scb-users-group/discussions/1) of this repository. Your feedback and suggestions are invaluable in helping us create a better platform for everyone.
 
-## Building
+## Contribute
 
-To create a production version of your app:
+We appreciate your interest in contributing to the SCB Users Group! Before getting started, please read our [Contribution Guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md).
 
-```bash
-npm run build
-```
+Once you're familiar with our guidelines, you're ready to contribute! Check out our [Issues tab](https://github.com/[username]/[repo]/issues) to find existing issues that need help or to open a new issue for your feature request or bug report.
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Thank you for being a part of the SCB Users Group community and helping us improve our platform!

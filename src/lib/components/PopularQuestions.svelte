@@ -26,7 +26,7 @@
     let:count
 >
     <!-- <p data-testid="count">There are {count} questions</p> -->
-    
+
     {#each questions as question (question.id)}
         <a
             href={`/question${question.id}`}
@@ -41,7 +41,9 @@
                     <span class="badge badge-primary mr-2">{tag}</span>
                 {/each}
                 <span class="float-right">
-                    <span class="mr-2">{question.votes} votes</span>
+                    <span class="mr-2">
+                        <i class="fas fa-thumbs-up" /> {question.votes}</span
+                    >
                     <small class="text-muted"
                         >{formatDate(question.createdAt)}</small
                     >
