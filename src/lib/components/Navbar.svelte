@@ -46,6 +46,15 @@
             <li class="nav-item">
                 <a class="nav-link" href="/">Home</a>
             </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    href="https://github.com/j-jayes/scb-users-group"
+                    target="_blank"
+                >
+                    <i class="fab fa-github" />
+                </a>
+            </li>
         </ul>
     </div>
 </nav>
