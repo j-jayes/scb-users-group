@@ -12,6 +12,10 @@
       This site is for users of SCB data to ask questions, share knowledge, and
       help each other out. Whether you're a new user or an experienced one, we
       welcome you to join our community and contribute to the discussion.
+      <br />
+      <br />
+
+      <strong>Note that this site is not associated with Statistics Sweden in any way.</strong>
     </p>
     <a href="/add-question" class="btn btn-lg btn-light mt-5">Add Question</a>
   </div>

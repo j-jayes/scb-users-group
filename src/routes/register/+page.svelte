@@ -8,12 +8,24 @@
     let username = "";
     let email = "";
     let password = "";
+    let confirmPassword = "";  // New variable for confirmation password
     let feedbackMessage = "";
 
     const auth = getAuth();
     const firestore = getFirebaseContext().firestore;
 
+    const validatePasswords = () => {
+        if (password !== confirmPassword) {
+            feedbackMessage = "Error, Passwords do not match!";
+            return false;
+        }
+        return true;
+    };
+
     const register = async () => {
+        if (!validatePasswords()) {
+            return;
+        }
         try {
             const userCredential = await createUserWithEmailAndPassword(
                 auth,
@@ -85,9 +97,19 @@
                                 required
                             />
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block"
-                            >Register</button
-                        >
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                bind:value={confirmPassword}
+                                class="form-control"
+                                required
+                            />
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Register
+                        </button>
                     </form>
                 </div>
             </div>
